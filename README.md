@@ -53,4 +53,11 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="mongodb logo"  />
 </div>
 
+<h2 align="left">Layout</h2>
+
+###
+
+<p align="left">O layout inicial foi desenvolvido em WordPress para fornecer uma base sólida, facilitando o início da execução em HTML e CSS. Essa abordagem permitiu uma visualização do possível design, auxiliando na transição eficiente para a codificação manual, onde podemos refinar os detalhes visuais e de desempenho do site.</p>
+
+
 ###
