@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Music</title>
+
+    <!--
+    Acessar o site remix icon
+    GitHub 
+    CDN - adicionar a marca
+    -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!--
+    Acessar o site boxicons
+    Github
+    Usar versão remota
+    -->
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--
+    Personalizar a font
+    usar o google fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!--Criando área para logo-->
+        <a href="#" class="logo">
+            <i class="ri-file-music-fill"></i>
+            <span>My Music</span>
+        </a>
+        <!--Campo para pesquisa-->
+
+        <!--Crinando menu-->
+        <ul class="menu">
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Tendências</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
+        <!--Criando área de login/Cadastra-se-->
+        <div class="login">
+            <a href="#" class="user"><i class="ri-user-line"></i>Login</a>
+            <a href="#"><i class="ri-login-circle-line"></i>Cadastra-se</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+    <main>
+        <!--SlideShow-->
+        <div class="title">
+            <h1>Destaque</h1>
+        </div>
+        <div class="content">
+            <div class="slides">
+                <!--
+                Colocando todos no mesmo grupo de radio para que o usuário 
+                só consiga utilizar uma opção
+                -->
+                <input type="radio" name="slide" id="slide1" checked >
+                <input type="radio" name="slide" id="slide2" >
+                <input type="radio" name="slide" id="slide3" >
+                <input type="radio" name="slide" id="slide4" >
+                <input type="radio" name="slide" id="slide5" >
+
+                <!--
+                Para cada imagem foi criada uma div para 
+                se trabalhar o espaços das mesmas
+                -->
+                <div class="slide s1">
+                    <!--Adicionado uma div para definir a imagem como primeira s1-->
+                    <img src="./img/img-1.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/img-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/img-3.jpeg" alt="">
+                </div>                
+                <div class="slide">
+                    <img src="./img/img-4.jpg" alt="">
+                </div>                
+                <div class="slide">
+                    <img src="./img/img-5.jpeg" alt="">
+                </div>
+                <!--Barra de navegação-->
+                <div class="navegation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="series-recentes">
+            <div class="series">
+                <h2>Series Recentes</h2>
+                <button class="but">Explore</button>
+            </div>     
+            <div class="card-series">
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c3.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c4.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+            </div>       
+        </div>
+
+        <div class="series-recentes">
+            <div class="filmes">
+                <h2>Filmes Recentes</h2>
+                <button class="but">Explore</button>
+            </div>     
+            <div class="card-series">
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c3.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c4.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+            </div>       
+        </div>
+
+        <div class="series-recentes">
+            <div class="jogos">
+                <h2>Jogos Recentes</h2>
+                <button class="but">Explore</button>
+            </div>     
+            <div class="card-series">
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c3.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c4.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+            </div>       
+        </div>
+
+        <div class="series-recentes">
+            <div class="tendencias">
+                <h2>Têndencias</h2>
+                <button class="but">Explore</button>
+            </div>     
+            <div class="card-series">
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c3.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c4.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+            </div>       
+        </div>
+
+        <div class="series-recentes">
+            <div class="noticias">
+                <h2>Notícias</h2>
+                <button class="but">Explore</button>
+            </div>     
+            <div class="card-series">
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c3.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c4.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c2.png" alt=""></span></a>
+                <a href="#"><span class="image"><img src="./img/c1.png" alt=""></span></a>
+            </div>       
+        </div>                   
+
+    </main>
+    <footer>
+      <div class="rodape">
+        <p>Todos os diretis reservados</p>
+      </div>
+    </footer>
+
+</body>
+</html>
