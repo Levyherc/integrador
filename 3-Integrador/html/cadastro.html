@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ìcones-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/style-cad.css">
+    <title>My Music | Login & Cadastro</title>
+    <script src="../js/srcrip-log-cad.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <i class='bx bxl-deezer' href="../index.html" ></i>
+                <span href="./index.html" href="../index.html">My Music</span>  
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="../index.html" class="link">Início</a></li>
+                    <li><a href="#series" class="link">Séries</a></li>
+                    <li><a href="#filmes" class="link">Filmes</a></li>
+                    <li><a href="#jogos" class="link">Jogos</a></li>
+                    <li><a href="#tendencias" class="link">Têndencias</a></li>
+                    <li><a href="#noticias" class="link">Notícias</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Login</button>
+                <button class="btn" id="registerBtn" onclick="register()">Cadastra-se</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!----------------------------- Form box ----------------------------------->    
+        <div class="form-box">
+            
+            <!------------------- login form -------------------------->
+
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Não tem uma conta? <a href="#" onclick="register()">Cadastre-se</a></span>
+                    <h2>Login</h2>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Senha">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Lembre-me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Esqueceu sua senha?</a></label>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------- registration form -------------------------->
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Tem uma conta?<a href="#" onclick="login()">Faça Login</a></span>
+                    <h2>Cadastra-se</h2>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <label for="input-field"></label>
+                        <input type="text" class="input-field" id="input-field" placeholder="Nome">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Sobre Nome">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Senha">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Cadastrar">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Lembre-me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Termos & condições</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

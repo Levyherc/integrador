@@ -1,0 +1,353 @@
+/*Google-Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    font-family: monospace;
+}
+
+/*Cores*/
+:root {
+    --bg-color: #222327;
+    --text-color: #FFFFFF;
+    --main-color: #29fd53;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/*##Logo-Menu-Pesquisa-Login-Cadastro*/
+header {
+    /*position: fixed;*/
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+/*Logo*/
+.header-logo {
+    font-size:  1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.header-logo i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+/*Menu*/
+.menu {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+/*Criando Efeito*/
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+/*Aplicando efeito ao passar o mouse*/
+.menu a:hover::after {
+    width: 100%;
+}
+
+.buscar-box {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    color: #29fd53;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*classe criada no JS*/
+.buscar-box.ativar {
+    width: 260px;
+}
+
+.buscar-box .btn-fechar {
+    font-size: 18px;
+}
+
+.buscar-box .lupa-buscar i {
+    font-size: 20px;
+}
+
+.buscar-box .input-buscar {
+    position: absolute;
+    left: 35px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 30px;
+}
+
+.buscar-box .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+.button,
+.btn {
+    padding: 0.7rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.button .span {
+    font-size: 20px;
+    position: relative;
+}
+
+.button:hover,
+.btn:hover {
+background-color: aquamarine;
+transform: 0.5s;
+}
+
+.log-cad i {
+    font-size: 12px;
+
+}
+
+/*##Carrossel##*/
+.container{
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(2, 3, 7, 0.4);
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.home-text {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.swiper-pagination-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 0.2rem !important;
+    background-color: #FFFFFF !important;
+    opacity: 1 !important;
+
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem !important;
+    background-color: var(--main-color) !important;
+
+}
+
+.home-text {
+    z-index: 1000;
+    padding: 0 150px;
+}
+
+.home-text span {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-size: 500;
+    text-transform: uppercase;
+}
+
+.home-text h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.play {
+    position: absolute;
+    right: 43rem;
+    top: 100%;
+}
+
+.play-p {
+    position: absolute;
+    right: 57rem;
+    top: 100%;
+}
+
+.play .bx,
+.play-p .bx {
+    background-color: var(--main-color);
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 4px solid rgb(2, 3, 7, 0.4);
+    color: var(--text-color);
+
+}
+
+.play .bx:hover,
+.play-p .bx:hover {
+    background-color: aqua;
+    color: var(--text-color);
+    transition: 0.2s all linear;
+}
+
+.heading {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* Estilo geral para o container de séries */
+.movies {
+    padding: 20px;
+    background-color: var(--bg-color); /* Cor de fundo */
+    border-radius: 10px;
+}
+
+/* Título da seção */
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+}
+
+.explore button {
+    background-color: var(--main-color);
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.explore button:hover {
+    background-color: aqua;
+    transition: 0.2s all linear;
+}
+/* Container das imagens */
+.movies-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Estilo das caixas das imagens */
+.box {
+    min-width: 20%; /* 20% da largura do container para exibir 5 imagens por vez */
+    box-sizing: border-box;
+    padding: 10px;
+    flex-shrink: 0;
+}
+/* Estilo das imagens */
+.box .box-img {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box .box-img img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilo do título das imagens */
+.box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo do subtítulo das imagens */
+.box span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}

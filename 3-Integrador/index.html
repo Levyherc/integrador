@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Slide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!--JS-Principal-->
+    <script src="./js/script.js" defer></script>
+
+    <!--ìcones-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- Link aplicar slide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <header class="header">
+        <!--Logo-->
+        <div class="header-logo">
+            <a href="#" class="header-logo">
+                <i class='bx bxl-deezer' ></i>
+                <span href="./index.html">My Music</span>            
+            </a>
+            <!-- <i class='bx bx-menu' id="menu-icon"></i> -->                        
+        </div>
+        <!--Menu-->
+        <div class="menu-home">
+            <ul class="menu">
+                <li><a href="#inicio" class="home-active">Início</a></li>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#tendencias">Têndencias</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+            </ul>
+        </div> 
+        <!--Pesquisa-->
+        <div class="buscar-box">
+            <div class="lupa-buscar">
+                <i class='bx bx-search-alt-2'></i>
+            </div>
+
+            <div class="input-buscar">
+                <input type="text" placeholder="Pesquise a sua música" id="mysearch">
+            </div>
+
+            <div class="btn-fechar">
+                <i class='bx bx-x-circle' id="clear-search"></i>
+            </div>
+        </div>
+        <!--Login/Cadastro-->
+        <div class="log-cad">
+            <a href="./html/cadastro.html" class="button" target="_blank"><i class='bx bx-log-in'></i><span>Login</span></a>
+            <a href="./html/cadastro.html" class="button" target="_blank"><i class='bx bx-user-plus'></i><span>Cadastra-se</span></a>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <!--Slide-->
+        <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide container">
+                    <img src="./style/img/home1.jpg" alt="">
+                    <div class="home-text">
+                        <span>Trilha Sonora de</span>
+                        <h1>Venon: Let There <br> XX Músicas</h1>
+                        <a href="#" class="play">
+                            <i class='bx bx-play-circle'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide container">
+                    <img src="./style/img/home2.jpg" alt="">
+                    <div class="home-text">
+                        <span>Trilha Sonora de</span>
+                        <h1> Avengers: Infinity Ware <br> XX Músicas</h1>
+                        <a href="#" class="play-p">
+                            <i class='bx bx-play-circle'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide container">
+                    <img src="./style/img/home3.jpg" alt="">
+                    <div class="home-text">
+                        <span>Trilha Sonora de</span>
+                        <h1>Spaider-Man: Far From Home <br> XX Músicas</h1>
+                        <a href="#" class="play-p">
+                            <i class='bx bx-play-circle'></i>
+                        </a>
+                    </div>
+                </div>                
+
+            </div>
+
+            <div class="swiper-pagination"></div>            
+        </section>
+        <!-- Séries -->
+        <section class="movies" id="movies">
+            <h2 class="heading">Séries</h2>
+
+            <div class="movies-container">
+                <!-- Cada "box" representa uma imagem e sua legenda -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m1.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m2.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m3.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m4.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m5.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m6.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m7.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m8.png" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m9.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série/h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m10.jpg" alt="">
+                    </div>
+                    <h3>Nome da Série</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Filmes-->
+        <section class="movies" id="movies">
+            <h2 class="heading">Filmes</h2>
+
+            <div class="movies-container">
+                <!-- Cada "box" representa uma imagem e sua legenda -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m10.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m9.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m8.png" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m7.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m6.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m5.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m4.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m3.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m2.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m1.jpg" alt="">
+                    </div>
+                    <h3>Nome do filme</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!--Jogos-->
+        <section class="movies" id="movies">
+            <h2 class="heading">Jogos</h2>
+
+            <div class="movies-container">
+                <!-- Cada "box" representa uma imagem e sua legenda -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m1.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m2.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m3.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m4.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m5.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogoe</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m6.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m7.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m8.png" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m9.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m10.jpg" alt="">
+                    </div>
+                    <h3>Nome do Jogo</h3>
+                    <span>XX Músicas</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!--Tendências-->
+        <section class="movies" id="movies">
+            <h2 class="heading">Tendências</h2>
+
+            <div class="movies-container">
+                <!-- Cada "box" representa uma imagem e sua legenda -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m10.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m9.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m8.png" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m7.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m6.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m5.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m4.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m3.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m2.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m1.jpg" alt="">
+                    </div>
+                    <h3>Nome Grupo Músical</h3>
+                    <span>Música em Alta</span>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!--Notícias-->
+        <section class="movies" id="movies">
+            <h2 class="heading">Notícias</h2>
+
+            <div class="movies-container">
+                <!-- Cada "box" representa uma imagem e sua legenda -->
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m1.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m2.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m3.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m4.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m5.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m6.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m7.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m8.png" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m9.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="./style/img/m10.jpg" alt="">
+                    </div>
+                    <h3>Notícias sobre grupos músicais</h3>
+                    <div class="explore">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>         
+
+    </main>
+
+    <footer></footer>
+
+
+</body>
+</html>
